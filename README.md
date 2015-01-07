@@ -17,6 +17,9 @@ generator on the `"http://knockknock.readify.net/RedPill.svc?wsdl"` endpoint).
 The generated classes are then used in association with the implementation file (the only source code
 in this repository) to implement this service.
 
+Alternativly you can check out the 'wsdl-source' branch if you wish to compile the service from previously
+generated wsdl source files.
+
 ### Running
 
 Calling `java -jar target/readify-redpill-0.1.0.jar` from the command line will run the application.
