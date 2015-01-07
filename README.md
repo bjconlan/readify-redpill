@@ -5,14 +5,13 @@ task used for recruitment.
 
 ### Prerequisites
 
-[JDK](http://www.oracle.com/technetwork/java/javase/downloads) (7 or above)
-[Maven](http://maven.apache.org/download.cgi) (3 or above)
+- [JDK](http://www.oracle.com/technetwork/java/javase/downloads) (7 or above)
+- [Maven](http://maven.apache.org/download.cgi) (3 or above)
 
 ### Building
 
-Simply by calling `mvn package` the application should generate the webservice interfaces provided
-by the Knock! Knock! applications wsdl definition. (This is done using java's `wsimport` commamand line
-generator on the `"http://knockknock.readify.net/RedPill.svc?wsdl"` endpoint).
+Simply by calling `mvn package` will build the application (NOTE this branch contains the generated
+source for the wsdl service - just in case the wsdl changes).
 
 The generated classes are then used in association with the implementation file (the only source code
 in this repository) to implement this service.
