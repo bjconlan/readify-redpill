@@ -12,11 +12,10 @@ import javax.jws.WebService;
 import javax.xml.ws.Endpoint;
 import java.util.*;
 
-@WebService(
-		endpointInterface = "net.readify.knockknock.IRedPill",
-		targetNamespace="http://KnockKnock.readify.net",
-		portName="BasicHttpBinding_IRedPill",
-		serviceName="RedPill")
+@WebService(endpointInterface = "net.readify.knockknock.IRedPill",
+            targetNamespace="http://KnockKnock.readify.net",
+            portName="BasicHttpBinding_IRedPill",
+            serviceName="RedPill")
 public class RedPill implements IRedPill {
 	private static final int MAX_FIB = 92;
 	private final List<Long> fibs = new ArrayList<>();
@@ -34,7 +33,7 @@ public class RedPill implements IRedPill {
 
 	@Override
 	public String whatIsYourToken() {
-		return "abcdefg";
+		return "5c201386-dcf1-4fde-9c11-fdc165dcc6f6";
 	}
 
 	@Override
