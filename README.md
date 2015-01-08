@@ -25,3 +25,7 @@ generated wsdl source files.
 Calling `java -jar target/readify-redpill-0.1.0.jar` from the command line will run the application.
 The appliction will start the http service on port 8080 which will provide the wsdl endpoint and associated
 service at `http://localhost:8080/RedPill.svc?wsdl`.
+
+## Results
+
+Unfortunatly this code only resulted in a 76% result.
