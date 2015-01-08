@@ -74,7 +74,11 @@ public class RedPill implements IRedPill {
 	}
 
 	public static void main(String... args) {
-		String serviceEndpoint = "http://localhost:8080/redpill.svc";
+		String serviceEndpoint = "http://0.0.0.0:8080/redpill.svc";
+		if (args[0] != null) {
+			serviceEndpoint = args[0];
+		}
+
 		Endpoint.publish(serviceEndpoint, new RedPill());
 		System.out.println("RedPill service started on " + serviceEndpoint);
 	}
