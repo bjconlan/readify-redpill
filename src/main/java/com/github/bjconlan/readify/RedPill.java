@@ -75,7 +75,7 @@ public class RedPill implements IRedPill {
 
 	public static void main(String... args) {
 		String serviceEndpoint = "http://0.0.0.0:8080/redpill.svc";
-		if (args[0] != null) {
+		if (args.length > 0) {
 			serviceEndpoint = args[0];
 		}
 		
